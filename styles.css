@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: -moz-linear-gradient(left, #DA3206 0%, #F3B444 100%);
+background: -webkit-linear-gradient(left, #DA3206 0%, #F3B444 100%);
+background: linear-gradient(to right, #DA3206 0%, #F3B444 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    background: #5D1503;
+    background: -moz-linear-gradient(left, #5D1503 0%, #926C29 100%);
+    background: -webkit-linear-gradient(left, #5D1503 0%, #926C29 100%);
+    background: linear-gradient(to right, #5D1503 0%, #926C29 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.question-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f1efef;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    background-color: #942a09;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-button:hover {
+    background-color: #d41051;
+}
+
+.result {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #faf6f6;
+}
+
+/* Hide the default radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the custom radio buttons */
+.custom-radio-label {
+    position: relative;
+    padding-left: 30px; /* Adjust the spacing as needed */
+    cursor: pointer;
+}
+
+/* Create the radio button appearance using a pseudo-element */
+.custom-radio-label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Size of the custom radio button */
+    height: 20px; /* Size of the custom radio button */
+    border: 2px solid #bd360d; /* Border color */
+    background-color: transparent;
+    margin-bottom: 10px;
+     /* Create a circular shape */
+}
+
+/* Style the custom radio button when selected */
+input[type="radio"]:checked + .custom-radio-label:before {
+    background-color: #860832; /* Fill color when selected */
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    max-width: auto;
+    margin: 7px;
+    padding: 15px;
+    padding-top: 7px;
+    border-radius: 10px;
+}
+
+h3 {
+    color:#fff;
+}
+
+
+
